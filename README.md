@@ -16,3 +16,21 @@ Este proyecto desarrolla una arquitectura de datos *End-to-End* diseñada para p
 
 ##  Cómo ejecutar este proyecto
 El código completo está contenido en el notebook principal. Las dependencias requieren un entorno configurado con Java 11 y Apache Spark 4.0+.
+
+## 📊 Business Intelligence & Visualización (Power BI)
+
+Para traducir los hallazgos técnicos en decisiones ejecutivas, desarrollé un panel de control interactivo enfocado en el impacto financiero del *Churn*.
+
+**Arquitectura del Modelo de Datos:**
+*   **ETL & Limpieza:** Utilización de Power Query y lenguaje M para depurar tipos de datos automáticos erróneos y unificar la configuración regional contable.
+*   **Modelo Relacional:** Construcción de un esquema de estrella (Star Schema) separando las dimensiones (`Dim_Contratos`) de la tabla de hechos (`Fast_Telco`).
+*   **Motor DAX:** Creación de medidas escalables usando funciones como `CALCULATE` y `DIVIDE` para establecer KPIs seguros frente a errores.
+
+**Insights Clave del Tablero:**
+*   **Identificación del Riesgo:** El 42.7% del riesgo de abandono se concentra en contratos mensuales.
+*   **Fuga de Capital:** Rastreo preciso de la pérdida de ingresos mensuales recurrentes (MRR), detectando que la mayor fuga financiera proviene de pagos mediante cheque electrónico.
+
+> **Demostración de Interactividad:** 
+> *El filtrado cruzado permite aislar el impacto financiero con un solo clic.*
+> 
+> <img width="1920" height="1080" alt="2026-06-02-02-18-23" src="https://github.com/user-attachments/assets/d5b39d70-63b1-4fc4-a6ea-204ebe7c1acc" />
