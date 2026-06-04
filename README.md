@@ -17,7 +17,7 @@ Este proyecto desarrolla una arquitectura de datos *End-to-End* diseñada para p
 ##  Cómo ejecutar este proyecto
 El código completo está contenido en el notebook principal. Las dependencias requieren un entorno configurado con Java 11 y Apache Spark 4.0+.
 
-## 📊 Business Intelligence & Visualización (Power BI)
+## Business Intelligence & Visualización (Power BI)
 
 Para traducir los hallazgos técnicos en decisiones ejecutivas, desarrollé un panel de control interactivo enfocado en el impacto financiero del *Churn*.
 
